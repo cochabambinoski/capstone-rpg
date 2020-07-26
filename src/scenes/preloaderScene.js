@@ -11,7 +11,6 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   preload() {
-    this.add.image(400, 200, 'monster');
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
     progressBox.fillStyle(0x22222, 0.8);
@@ -82,10 +81,8 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('tree2', 'assets/tree1.png');
     this.load.image('tree1', 'assets/tree0.png');
-    this.load.image('axe', 'assets/Axes.png');
+    this.load.image('alcohol', 'assets/Alcohol.png');
     this.load.image('fight', 'assets/fight.jpg');
-    this.load.image('space', 'assets/backspace.png');
-    this.load.image('arrow', 'assets/pointers.jpg');
 
     this.load.image('court', 'assets/court.png');
 
@@ -101,7 +98,6 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.image('hero1', 'assets/chichu.png');
     this.load.image('hero2', 'assets/chayane.png');
-    this.load.image('monster', 'assets/monster.png');
     this.load.image('clefero', 'assets/clefero.png');
     this.load.image('aparapita', 'assets/aparapita.png');
     this.load.image('gurka', 'assets/gurka.png');

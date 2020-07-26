@@ -14,7 +14,7 @@ export default class TitleScene extends Phaser.Scene {
     this.add.text(110, 60, 'Chichus       Tales', {
       fontSize: '100px', textAlign: 'center', fontFamily: 'Ranchers', fill: '#fff',
     });
-    this.add.image(445, 100, 'axe');
+    this.add.image(445, 100, 'alcohol');
 
     this.gameButton = new Button(this, config.width / 2, config.height / 2, 'blueButton1', 'blueButton2', 'Play', 'WorldScene');
     this.optionsButton = new Button(this, config.width / 2, config.height / 2 + 100, 'blueButton1', 'blueButton2', 'Options', 'Options');

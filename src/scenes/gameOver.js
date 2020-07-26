@@ -13,7 +13,7 @@ export default class GameOver extends Phaser.Scene {
 
   create() {
     this.menuButton = new Button(this, 400, 400, 'blueButton1', 'blueButton2', 'Menu', 'Title');
-    this.add.image(400, 270, 'axe');
+    this.add.image(400, 270, 'alcohol');
     this.madeByText = this.add.text(
       0,
       0,

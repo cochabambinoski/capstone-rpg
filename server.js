@@ -9,7 +9,7 @@ app.use('/', serveStatic(path.join(__dirname, '')));
 app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port);
 // eslint-disable-next-line no-console
 console.log(`app is listening on port: ${port}`);
