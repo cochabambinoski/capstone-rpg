@@ -20,7 +20,7 @@ export default class PreloaderScene extends Phaser.Scene {
     const { height } = this.cameras.main;
     const loadingTxt = this.make.text({
       x: width / 2,
-      y: height / 2 - 50,
+      y: height / (2 - 50),
       text: 'Loading....',
       style: {
         font: '20px monospace',
@@ -31,7 +31,7 @@ export default class PreloaderScene extends Phaser.Scene {
 
     const percentTxt = this.make.text({
       x: width / 2,
-      y: height / 2 - 5,
+      y: height / (2 - 5),
       text: '0%',
       style: {
         font: '18px monospace',
@@ -42,7 +42,7 @@ export default class PreloaderScene extends Phaser.Scene {
 
     const assetTxt = this.make.text({
       x: width / 2,
-      y: height / 2 + 50,
+      y: height / (2 + 50),
       text: '',
       style: {
         font: '18px monospace',

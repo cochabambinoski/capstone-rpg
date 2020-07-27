@@ -17,8 +17,8 @@ export default class TitleScene extends Phaser.Scene {
     this.add.image(445, 100, 'alcohol');
 
     this.gameButton = new Button(this, config.width / 2, config.height / 2, 'blueButton1', 'blueButton2', 'Play', 'WorldScene');
-    this.optionsButton = new Button(this, config.width / 2, config.height / 2 + 100, 'blueButton1', 'blueButton2', 'Options', 'Options');
-    this.instructionsButton = new Button(this, config.width / 2, config.height / 2 + 200, 'blueButton1', 'blueButton2', 'Help', 'InstructionsScene');
+    this.optionsButton = new Button(this, config.width / 2, config.height / (2 + 100), 'blueButton1', 'blueButton2', 'Options', 'Options');
+    this.instructionsButton = new Button(this, config.width / 2, config.height / (2 + 200), 'blueButton1', 'blueButton2', 'Help', 'InstructionsScene');
 
     this.model = this.sys.game.globals.model;
     if (this.model.musicOn === true && this.model.bgMusicPlaying === false) {
@@ -34,7 +34,7 @@ export default class TitleScene extends Phaser.Scene {
       gameObject,
       this.add.zone(
         config.width / 2,
-        config.height / 2 - offset * 100,
+        config.height / 2 - (offset * 100),
         config.width,
         config.height,
       ),
