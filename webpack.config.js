@@ -1,10 +1,10 @@
-const webpack = require('webpack');
+/* eslint-disable import/no-unresolved */
+
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: {
-    app: ['babel-polyfill', './src/index.js'],
-  },
+  entry: './src/index.js',
 
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -27,14 +27,6 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
       },
     ],
   },
